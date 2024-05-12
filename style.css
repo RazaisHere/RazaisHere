@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background-color: rgb(0, 0, 33);
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+     color: white;
+     line-height: 1.4;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18, 18, 62);
+    z-index: 1000; /* Ensure the navigation bar is on top of other content */
+}
+
+nav ul{
+    margin: 0 23px;
+    display: flex;
+    gap: 45px;
+    list-style-type: none;
+}
+nav ul li {
+    list-style: none; /* Remove default list style */
+    position: relative; /* Position relative for pseudo-element */
+}
+
+nav ul li::before {
+    content: '';
+    position: absolute;
+    bottom: -6px; /* Adjust this value to position the underline */
+    left: 0;
+    width: 0;
+    height: 2px; /* Height of the underline */
+    background-color: rgb(153, 153, 226); /* Color of the underline */
+    transition: width 0.3s ease; /* Transition effect */
+    visibility: hidden; /* Hide the underline by default */
+}
+
+nav ul li:hover::before {
+    visibility: visible; /* Show the underline on hover */
+    width: 100%; /* Expand the underline on hover */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.left {
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.left:hover {
+    font-size: 1.6rem; /* Increase font size on hover */
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 180PX;
+    margin-bottom: 290px;
+    align-items: center;
+
+}
+.firstSection >div
+{
+    width: 30%;
+}
+.leftSection{
+    font-size: 3rem ;
+    
+}
+.rightsection{
+
+}
+.rightsection img{
+    width: 100%;
+    margin-left: -50px;
+
+}
+.purple{
+    color: rgb(170, 107, 228);
+}
+#element{
+    color: rgb(170, 107, 228);
+}
+
+main hr{
+    margin: 30px 100px;
+    margin-top: 40px;
+    background-color: rgb(132, 132, 202) ;
+    border: 0;
+    height: 1.2PX;
+}
+
+/*Secong Section*/
+.SecondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.grey{
+    color: gray;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.SecondSection .box{
+    background-color: white;
+    width: 72vw;
+    height: 3px;
+    margin: 60px 0;
+    display: flex;
+    
+}
+.SecondSection .box .Vertical{
+    height: 93px;
+    width: 1px;
+    background-color: white;
+    margin: 0 166px;
+}
+.image-top{
+    width: 56px;
+    position: relative;
+    top: -66px;
+    left: -29px;
+    border-radius: 3px
+}
+.VerticalTitle{
+    width: 170px;
+    position: relative;
+    top: 39px;
+    left: -26px;
+}
+.VerticalDescription{
+    position: relative;
+    top: 56px;
+    left: -22px;
+    width: 150px;
+    font-size: 14px;
+    color: gray;
+}
+footer{
+    background-color: #111b23;
+    
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 100px;
+}
+.footer ul{
+    list-style: none;
+}
